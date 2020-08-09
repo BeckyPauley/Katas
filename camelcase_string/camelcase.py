@@ -4,7 +4,7 @@ def to_camel_case(text):
         [capitalised.append(word.capitalize()) for word in text.split(check_splitter(text))]
         if text[0].islower():
             capitalised[0] = capitalised[0].lower()
-        return check_splitter(text).join(capitalised)
+        return ''.join(capitalised)
     else:
         return text
 
